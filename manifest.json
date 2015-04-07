@@ -41,6 +41,7 @@
         "finder.css"
       ],
       "js": [
+        "hilitor.js",
         "finder.js"
       ]
     }
