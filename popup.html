@@ -4,12 +4,27 @@
 <head>
   <title>chrome-persistfind</title>
 
-  <script src="bower_components/less/dist/less.js"></script>
-
+  <link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
+  <link rel="stylesheet" href="bower_components/angular/angular-csp.css">
   <link rel="stylesheet/less" href="styles.less">
 </head>
 
-<body>
+<body ng-csp ng-app="persistfind">
+  <div ng-controller="FindCtrl" layout="column">
+    <md-content class="md-padding">
+      <md-input-container md-no-float>
+        <md-icon md-svg-src="assets/icon.svg" class="name"></md-icon>
+        <input ng-model="find_string" type="text" placeholder="Find">
+      </md-input-container>
+    </md-content>
+  </div>
+
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.js"></script>
+  <script src="bower_components/angular-aria/angular-aria.js"></script>
+  <script src="bower_components/angular-messages/angular-messages.js"></script>
+  <script src="bower_components/angular-material/angular-material.js"></script>
+  <script src="bower_components/less/dist/less.js"></script>
   <script src="popup.js"></script>
 </body>
 </html>

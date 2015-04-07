@@ -1,4 +1,5 @@
-var toastGroupTemplate = document.querySelector('#toastGroup');
-toastGroupTemplate.showToast = function() {
-  document.querySelector('#toast').show();
-}
+var persistfind = angular.module('persistfind', ['ngMaterial', 'ngMessages']);
+
+persistfind.controller('FindCtrl', function($scope) {
+  $scope.find_string = "";
+});
